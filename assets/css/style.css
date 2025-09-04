@@ -1,10 +1,85 @@
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
-body{
-    font-size: 1.6rem;
-    
+/* =======Comaman ~ dùng chung ==========*/
+
+a {
+  text-decoration: none;
+}
+.main-content {
+  max-width: calc(100% - 48px);
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 16px;
+  line-height: 50px;
+  min-width: 118px;
+  text-align: center;
+  background-color: #171100;
+  border-radius: 24.5px;
+  color: #ffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+/* ============= header ========= */
+.header {
+  background: #bcb08f;
+}
+.nav {
+  margin-left: auto;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .h-body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  font-size: 1.6rem;
+  color: #5f5b53;
+  padding: 8px 21px;
+  position: relative;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  text-shadow: 1px 0 0 currentcolor;
+}
+
+.nav li.active a::after {
+  content: " ";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #171100;
+  display: block;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+}
+.header .btn-sign-up {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
 }
